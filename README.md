@@ -31,7 +31,8 @@ I only did development tasks not the designing parts.
 - Welcome Section - 30 minutes
 - Stats Section - 30 minutes
 - Client Logo Section - 30 minutes
-- News Section - 45 minutes
+- News Section - 30 minutes
+- Footer Section - 30 minutes
 - Writing README.md file - 10 minutes
 
 ## Contributing
