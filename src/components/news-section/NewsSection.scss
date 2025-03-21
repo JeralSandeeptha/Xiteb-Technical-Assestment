@@ -1,0 +1,124 @@
+@import '../../styles/all';
+
+.news-section {
+    width: 100%;
+    min-height: 50vh;
+    font-family: $primary-font;
+
+    .news-section-inner {
+        max-width: $max-width;
+        margin: 0 auto;
+        min-height: 50vh;
+        padding-bottom: 50px;
+
+        .news-header {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 2rem 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .section-header {
+                letter-spacing: 5px;
+                font-weight: 800;
+            }
+            .section-sub-header {
+                position: relative;
+                color: $logo-color;
+                font-weight: normal;
+
+                &::after {
+                    content: '';
+                    width: 15px; 
+                    height: 15px;
+                    background-color: $light_blue;
+                    position: absolute;
+                    left: -20%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        .news-content {
+            display: grid;
+            min-height: 50vh;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+         
+            .news {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                background-color: $light-gray;
+
+                &:hover {
+                    background-color: $light_blue;
+                    color: $white;
+
+                    .news-description {
+                        color: $white;
+                    }
+
+                    .date-container {
+                        background-color: $light_blue;
+                    }
+                }
+
+                .news-left {
+                    position: relative;
+
+                    .date-container {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100px;
+                        padding: 5px;
+                        text-align: center;
+                        background-color: $dark-gray;
+
+                        .date {
+                            color: $white;
+                        }
+
+                        .month {
+                            color: $white;
+                        }
+                    }
+                }
+
+                .news-right {
+                    padding: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .news-title {
+                        font-size: 20px;
+                    }
+
+                    .user-content {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 10px;
+                    }
+
+                    .comment-logo {
+                        width: 20px;
+                    }
+                }
+
+                .news-description {
+                    color: $logo-color;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
