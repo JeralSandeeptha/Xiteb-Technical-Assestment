@@ -1,7 +1,6 @@
 import { news } from '../../data/news.data';
-import { News } from '../../types/model.types';
+import News from '../news/News';
 import './NewsSection.scss';
-import chatIcon from '../../assets/logos/chat.png';
 
 const NewsSection = () => {
   return (
@@ -15,25 +14,19 @@ const NewsSection = () => {
 
         <div className="news-content">
             {
-                news.map((news: News) => {
+                news.map((news) => {
                     return (
-                        <div className='news'>
-                            <div className="news-left" style={{ backgroundImage: `url(${news.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                                <div className="date-container">
-                                    <h1 className='date'>{ news.date }</h1>
-                                    <h3 className='month'>{ news.month }</h3>
-                                </div>
-                            </div>
-                            <div className="news-right">
-                                <h2 className='news-title'>{ news.title }</h2>
-                                <div className="user-content">
-                                    <h5 className='user'>{ news.user }</h5>
-                                    <img src={chatIcon} alt="chat-icon" className='comment-logo'/>
-                                    <h5 className='count'>{ news.commentsCount }</h5>
-                                </div>
-                                <h5 className='news-description'>{news.description}</h5>
-                            </div>
-                        </div>
+                        <News 
+                            key={news.id}
+                            commentsCount={news.commentsCount}
+                            date={news.date}
+                            description={news.description}
+                            id={news.id}
+                            image={news.image}
+                            month={news.month}
+                            user={news.user}
+                            title={news.title}
+                        />
                     )
                 })
             }

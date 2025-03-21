@@ -13,3 +13,4 @@ export interface News{
     commentsCount: number,
     description: string
 }
+

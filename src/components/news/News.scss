@@ -1,0 +1,71 @@
+@import '../../styles/all';
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $light-gray;
+
+    &:hover {
+        background-color: $light_blue;
+        color: $white;
+
+        .news-description {
+            color: $white;
+        }
+
+        .date-container {
+            background-color: $light_blue;
+        }
+    }
+
+    .news-left {
+        position: relative;
+
+        .date-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            padding: 5px;
+            text-align: center;
+            background-color: $dark-gray;
+
+            .date {
+                color: $white;
+            }
+
+            .month {
+                color: $white;
+            }
+        }
+    }
+
+    .news-right {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        .news-title {
+            font-size: 20px;
+        }
+
+        .user-content {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .comment-logo {
+            width: 20px;
+        }
+    }
+
+    .news-description {
+        color: $logo-color;
+        font-weight: normal;
+    }
+}
