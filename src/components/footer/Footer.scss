@@ -1,0 +1,130 @@
+@import '../../styles/all';
+
+.footer {
+    width: 100%;
+    min-height: 20vh;
+    font-family: $primary-font;
+    background-color: $dull_blue;
+
+    .footer-inner {
+        min-height: 20vh;
+        max-width: $max-width;
+        margin: 0 auto;
+
+        .footer-header {
+            padding: 3rem 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .footer-header-left {
+                color: $white;
+                
+                .footer-header-title {
+                    margin-bottom: 20px;
+                    font-weight: 500;
+                    font-size: 40px;
+                }
+                .footer-header-desc {
+                    font-weight: normal;
+                }
+            }
+
+            .footer-header-right {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .text-input {
+                    padding: 20px;
+                    max-width: 300px;
+                    width: 300px;
+                    border: none;
+                    outline: none;
+                    border-radius: $border-radius;
+                }
+    
+                .input-button {
+                    background-color: $orange_two;
+                    padding: 20px 40px;
+                    border: none;
+                    color: $white;
+                    font-weight: 600;
+                    outline: none;
+                    border-radius: $border-radius;
+                }
+            }
+        }
+
+        .footer-middle {
+            gap: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+            .section {
+
+                .footer-title {
+                    color: $white;
+                    font-weight: normal;
+                    margin-bottom: 30px;
+                }
+
+                .link-container-two {
+                    
+                    .link {
+                        color: $logo-color;
+                        font-weight: normal;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .link-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                        gap: 4px;
+
+                       
+
+                    .footer-image {
+                        width: 100%;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+
+        .footer-lower {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 2rem 0;
+            align-items: flex-end;
+
+            .company-details {
+
+                h5 {
+                    font-weight: normal;
+                    color: $logo_color;
+                }
+            }
+
+            .logos {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 10px;
+
+                .logo-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    border-radius: 100%;
+                    background-color: #8896ab;
+                    .logo {
+                        cursor: pointer;
+                        width: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
