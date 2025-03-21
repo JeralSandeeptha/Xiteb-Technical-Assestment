@@ -17,10 +17,6 @@ Ensure you have the following installed on your system:
 - [Node.js](https://nodejs.org/) (v18 or later recommended)
 - npm (comes with Node.js)
 - A code editor, such as [Visual Studio Code](https://code.visualstudio.com/)
-- As a Language [Setup Typescript](https://www.typescriptlang.org/)
-```js
-npm install -g typescript
-```
 
 ## Run Application
 
