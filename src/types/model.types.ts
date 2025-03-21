@@ -14,3 +14,9 @@ export interface News{
     description: string
 }
 
+export interface ISat {
+    id: number,
+    count: number,
+    title: string
+}
+

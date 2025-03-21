@@ -1,0 +1,61 @@
+@import '../../styles/all';
+
+.stat-content {
+    width: 100%;
+    min-height: 30vh;
+    font-family: $primary-font;
+    padding-top: 5rem;
+
+    .stat-content-inner {
+        max-width: $max-width;
+        margin: 0 auto;
+        min-height: 30vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        @media screen and (max-width: 1200px) {
+            padding: 0 2rem 50px;
+        }
+        @media screen and (max-width: $tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: $tablet) {
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        @media screen and (max-width: $mobile) {
+            grid-template-columns: 1fr;
+        }
+
+        .stat {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center ;
+
+            .data {
+                display: flex;
+                align-items: center;
+                color: $dark_blue;
+                gap: 10px;
+                font-weight: 800;
+
+                .stat-count {
+                    font-size: 50px;
+                    z-index: 2;
+                }
+                .stat-title {
+                    font-size: 25px;
+                    z-index: 2;
+                }
+            }
+
+            .behind-text {
+                position: absolute;
+                color: $white;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);    
+                font-size: 100px;
+            }
+        }
+    }
+}
