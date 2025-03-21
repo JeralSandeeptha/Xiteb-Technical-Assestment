@@ -1,0 +1,26 @@
+@import '../../styles/all';
+
+.client-logo-section {
+    width: 100%;
+    min-height: 30vh;
+
+    .client-logo-section-inner {
+        max-width: $max-width;
+        margin: 0 auto;
+        min-height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1150px) {
+            padding: 0 5rem;
+        }
+        @media screen and (max-width: $mobile-portrait) {
+            display: grid;
+            padding: 2rem 5rem;
+            gap: 50px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
