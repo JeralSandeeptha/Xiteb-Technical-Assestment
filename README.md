@@ -5,6 +5,7 @@ This is the technical assestment of Xiteb Pvt Ltd.
 ## Table of Contents
  
 - [Get Started](#get-started)
+- [Setup Project](#setup-project)
 - [Run Application](#run-application)
 - [Tasks](#tasks)
 - [Contributing](#contributing)
@@ -17,6 +18,12 @@ Ensure you have the following installed on your system:
 - [Node.js](https://nodejs.org/) (v18 or later recommended)
 - npm (comes with Node.js)
 - A code editor, such as [Visual Studio Code](https://code.visualstudio.com/)
+
+## Setup Project
+
+```bash
+git clone https://github.com/JeralSandeeptha/Xiteb-Technical-Assestment
+```
 
 ## Run Application
 
