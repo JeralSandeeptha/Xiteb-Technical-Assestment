@@ -1,1 +1,48 @@
-@import './Testimonials.scss';
+@import '../../styles/all';
+
+.testimonials {
+    width: 100%;
+    font-family: $primary-font;
+    min-height: 50vh;
+
+    .testimonials-inner {
+        max-width: $max-width;
+        margin: 0 auto;
+        min-height: 50vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+
+        .testimonials-left {
+
+            .header {
+
+                .title {
+
+                }
+
+                .description {
+                    color: $logo_color;
+                    margin-bottom: 20px;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        .testimonials-right {
+
+            .header {
+                
+                .title {
+
+                }
+
+                .description {
+                    color: $logo_color;
+                    margin-bottom: 20px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

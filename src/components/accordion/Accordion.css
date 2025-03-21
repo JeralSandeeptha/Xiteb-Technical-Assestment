@@ -1,0 +1,29 @@
+.accordion {
+  width: 100%;  
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .accordion-button {
+    width: 100%;
+    color: black;
+    padding: 10px;
+    background-color: #e5ebf1;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .accordion-button:hover {
+    background-color: #d6dce2;
+  }
+  
+  .accordion-content {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
