@@ -1,0 +1,62 @@
+@import '../../styles/all';
+
+.navbar {
+    width: 100%;
+    font-family: $primary-font;
+    padding: 1rem 0;
+
+    .navbar-inner {
+        max-width: $max-width;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+
+        .left {
+
+            .logo {
+                width: 75px;
+                height: 50px;
+            }
+        }
+
+        .right {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+
+            .links {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .link {
+                    color: $black;
+
+                    &:hover {
+                        color: $orange_two;
+                    }
+                }
+            }
+
+            .buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+
+                .button {
+                    outline: none;
+                    border: none;
+                    color: $white;
+                    padding: 20px 25px;
+                }
+
+                .button-one {
+                    background-color: $orange_two;
+                }
+                .button-two {
+                    color: $white;
+                    background-color: $black;
+                }
+            }
+        }
+    }
+}
