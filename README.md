@@ -33,6 +33,7 @@ I only did development tasks not the designing parts.
 - Client Logo Section - 30 minutes
 - News Section - 30 minutes
 - Footer Section - 30 minutes
+- Header and Hero Section - 30 minutes
 - Writing README.md file - 10 minutes
 
 ## Contributing
